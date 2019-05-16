@@ -1,8 +1,8 @@
 # HaraliCU
 
-HaraliCU is a GPU-powered approach designed to efficiently computate the Gray-Level Co-occurrence Matrix (GLCM) in order to extract an exhaustive set of the Haralick features.
+HaraliCU is a GPU-powered approach designed to efficiently compute the Gray-Level Co-occurrence Matrix (GLCM) in order to extract an exhaustive set of the Haralick features.
 
-It has been conceived to overcome the limitations of the existing feature extraction and radiomics tools that cannot effectively manage the full-dynamics of gray-scale levels (i.e., 16 bit). 
+It has been conceived to overcome the limitations of the existing feature extraction and radiomics tools that cannot effectively manage the full-dynamics of grey-scale levels (i.e., 16 bit).
 
 This novel approach is a promising solution that might enable multi-scale radiomic analyses by properly combining several values of distance offsets, orientations, and window sizes.
 
@@ -15,7 +15,7 @@ This novel approach is a promising solution that might enable multi-scale radiom
   
 ## <a name="ref"></a>References ##
 
-A detailed description of HaraliCU, as well as a complete experimental comparison against a CPU version by using the dataset described below ([Data](#data)), can be found in:
+A detailed description of HaraliCU, as well as a complete experimental comparison against the corresponding CPU version by using the dataset described below ([Data](#data)), can be found in:
 
 - Rundo L., Tangherloni A., Galimberti S., Cazzaniga P., Woitek R., Sala E., Nobile M.S., Mauri G.: "HaraliCU: GPU-Powered Haralick FeatureExtraction on Medical Images Exploitingthe Full Dynamics of Gray-scale Levels", International Conference on Parallel Architectures and Compilation Techniques, submitted.
 

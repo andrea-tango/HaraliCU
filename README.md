@@ -19,24 +19,46 @@ A detailed description of HaraliCU, as well as a complete experimental compariso
 
 - Rundo L., Tangherloni A., Galimberti S., Cazzaniga P., Woitek R., Sala E., Nobile M.S., Mauri G.: "HaraliCU: GPU-Powered Haralick Feature Extraction on Medical Images Exploitingthe Full Dynamics of Gray-scale Levels", In: Proc. 15th International Conference on Parallel Computing Technologies (PaCT) 2019. (Accepted Manuscript)
 
-
-
 ## <a name="lib"></a>Required libraries ##
 
+The CPU version of HaraliCU has been developed in `C++`, whilst the GPU version in `CUDA C++`.
+Both versions have been developed and tested on Ubuntu Linux but should work also on MacOS X and Windows.
+
+HaraliCU depends on:
+
+- `CUDA` toolkit;
+- `OpenCV`.
+
+In order to compile both versions of HaraliCU, we provide two bash scripts (_compileCPU.sh_ and _compileGPU.sh_).
+
+The resulting executable files (named HaraliCU and HaraliCPU) are standalone executable programs.
 
 ## <a name="inp"></a>Input parameters ##
 
 In oder to run HaraliCU, the following parameters must be provided:
 
-- `-i` to specify the input image to process (in TIFF/TIF);
+- `-i` to specify the input folder containing the images to process (in BMP, DIB, JPEG, JPG, JPE, JP2, PNG, WEBP, PBM, PGM, PPM, SR, RAS, TIFF, TIF).
+
   
 Optional parameters could be provided:
+- `-o` to specify the output folder (default: output);
+- `-w` to specify the window size (default: 5);
+- `-p` to specify the padding strategy (default: 1 = zero padding. 0 = no padding; 2 = symmetric);
+- `-d` to specify the distance between the reference pixel and the neighbor pixel (default: 1); 
+- `-t` to specify the orientation (default: 1 = 0°. 2 = 45°; 3 = 90°; 4 = 135°);
+- `-q` to specify the maximum gray level for quantization (default: the maximum value in the image);
+- `-g` to make the GLCM pairs symmetric;
+- `-s` to save the feature maps;
+- `-v` to enable the verbose modality.
+
+
+By running python HaraliCU without specifying any parameter (or using `-?` or `-h`), all the above parameters will be listed.
 
 ## <a name="datasets"></a>Data ##
 
 ## <a name="lic"></a>License ##
 
-MedGA is licensed under the terms of the GNU GPL v3.0
+HaraliCU is licensed under the terms of the GNU GPL v3.0
 
 ## <a name="cont"></a>Contacts ##
 
